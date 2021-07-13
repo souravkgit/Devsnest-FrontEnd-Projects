@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background: url(./bgtha10.gif);
+    background-size: cover;
+    font-family: 'Mate SC', serif !important;
+    transition: all 0.5s;
+}
+
+.main {
+    height: 760px;
+    width: 750px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container {
+    margin-top: 5px;
+    margin-right: 10px;
+    height: 160px;
+    width: 170px;
+    border-radius: 10px;
+    transition: transform 0.5s linear;
+    transform: rotateY(180deg);
+}
+
+.front {
+    margin-top: 5px;
+    margin-right: 10px;
+    position: absolute;
+    height: 160px;
+    width: 170px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: solid black;
+    transition: transform 0.5s linear;
+    font-size: 35px;
+    text-align: center;
+    color: gold;
+}
+
+.back {
+    margin-top: 5px;
+    margin-right: 10px;
+    position: absolute;
+    height: 160px;
+    width: 170px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backface-visibility: hidden;
+    -webkit-backdrop-filter: blur(80px);
+    border: solid black;
+    transition: transform 0.5s linear;
+    backface-visibility: hidden;
+}
+
+.front.flip {
+    background-color: transparent;
+    transform: rotateY(180deg);
+}
+
+.back.flip {
+    transform: rotateY(180deg);
+}
+
+.flipped {
+    transform: rotateY(180deg);
+}
+
+.popup {
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    display: none;
+}
+
+.popup>div {
+    width: 300px;
+    height: 200px;
+    margin-top: 700px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 1rem !important;
+    }
+}
+
+#reload {
+    border: 0;
+    background-color: #f13637;
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    color: #fff;
+    vertical-align: middle;
+    font-size: 1.2rem !important;
+    margin: 10px 0;
+}
+
+#reload:active,
+#reload:focus {
+    outline: none;
+}
