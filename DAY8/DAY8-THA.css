@@ -1,0 +1,21 @@
+body {
+    background-color: black;
+}
+
+.box {
+    width: 25px;
+    height: 20px;
+    display: inline-block;
+    background-color: blue;
+}
+
+.box:hover {
+    opacity: 0.6;
+}
+
+.boxclicked {
+    width: 25px;
+    height: 20px;
+    display: inline-block;
+    background-color: yellowgreen;
+}
