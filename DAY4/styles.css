@@ -1,0 +1,34 @@
+
+    .needle1 {
+        animation-name: kuch;
+        animation-duration: 60s;
+        animation-iteration-count: infinite;
+        transform-origin: 0px 0px;
+        animation-timing-function: linear;
+    }
+
+    .needle2 {
+        animation-name: kuch;
+        animation-duration: 3600s;
+        animation-iteration-count: infinite;
+        transform-origin: 0px 0px;
+        animation-timing-function: linear;
+    }
+
+    .needle3 {
+        animation-name: kuch;
+        animation-duration: 216000s;
+        animation-iteration-count: infinite;
+        transform-origin: 0px 0px;
+        animation-timing-function: linear;
+    }
+
+    @keyframes kuch {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
