@@ -1,0 +1,81 @@
+#notes {
+    min-height: 650px;
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 15px;
+    margin-right: 5%;
+    color: black;
+    align-items: flex-start;
+    background-color: greenyellow;
+    border-radius: 5px;
+    border: gold;
+    display: flex;
+    flex-direction: column;
+    border-style: groove;
+}
+
+.note {
+    display: flex;
+}
+
+p {
+    width: fit-content;
+    height: fit-content;
+    font-size: 18px;
+    border-radius: 5px;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
+    color: red;
+    position: relative;
+    background-color: black;
+    border: gold;
+    display: flex;
+    flex-direction: row;
+    border-style: groove;
+    align-content: flex-start;
+}
+
+p.done {
+    background-color: darkblue;
+    color: gold;
+}
+
+.block {
+    align-items: center;
+}
+
+.add {
+    padding: 20px;
+    display: block;
+    background-color: indigo;
+    color: gold;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    margin-right: 4.5%;
+    margin-top: 3px;
+    font-size: 20px;
+    border: gold;
+    border-radius: 5px;
+    border-style: groove;
+}
+
+.btn {
+    margin-top: 13px;
+    margin-left: 5px;
+    font-size: 19px;
+}
+
+#tick:hover,
+#delete:hover {
+    height: auto;
+    width: auto;
+    max-width: 53px;
+    max-height: 55px;
+    padding-left: 5px;
+    color: gold;
+    border: none;
+    background: indigo;
+    box-shadow: 0 0 20px indigo;
+}
