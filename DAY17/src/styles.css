@@ -1,0 +1,23 @@
+.card {
+    width: 400px;
+    height: 200px;
+    border: solid blue;
+    background-color: red;
+}
+
+.container {
+    width: 430px;
+    height: 500px;
+    border: solid blue;
+    overflow: scroll;
+    margin: auto;
+}
+
+.title {
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+    color: gold;
+}
